@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-700 transition-colors;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors;
+}
+
+.section-title {
+  @apply text-4xl font-bold text-gray-900 mb-4;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-2xl;
+  }
+}
